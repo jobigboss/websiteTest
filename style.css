@@ -86,6 +86,14 @@ img {
     mix-blend-mode: normal;
 }
 
+/* Hide Custom Cursor on Touch Devices & Mobile/Tablet */
+@media (hover: none) and (pointer: coarse),
+(max-width: 1024px) {
+    .custom-cursor {
+        display: none !important;
+    }
+}
+
 /* Scroll Progress Bar */
 .scroll-progress {
     position: fixed;
