@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROW UP - Next Gen Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- <a href="#" class="logo">GROW <span>UP.</span></a> -->
+            <a href="#" class="logo">
+                <img src="https://v1.growupworld.com/wp-content/uploads/2026/01/LogoGrow-Up.png" alt="Grow Up Logo"
+                    style="height: 50px;">
+            </a>
+            <nav>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact" class="btn btn-primary" style="padding: 10px 25px; color: black;">Let's
+                            Talk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="growth-circle"></div>
+        <div class="hero-content container">
+            <h1>Grow Up <br><span class="text-gradient">Go Together</span></h1>
+            <p>
+                <span id="typewriter"></span>
+                <span class="cursor"
+                    style="display:inline-block; width:2px; height:1em; background-color:var(--primary-color); animation:blink 1s step-end infinite;"></span>
+            </p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary magnetic-btn">Start Project</a>
+                <a href="#portfolio" class="btn btn-secondary magnetic-btn">View Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <span class="marquee-item">STRATEGY • CREATIVE • CONTENT • SOCIAL • GROWTH • DESIGN • </span>
+            <span class="marquee-item">STRATEGY • CREATIVE • CONTENT • SOCIAL • GROWTH • DESIGN • </span>
+            <span class="marquee-item">STRATEGY • CREATIVE • CONTENT • SOCIAL • GROWTH • DESIGN • </span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h4 class="highlight">Background</h4>
+                    <h2 class="text-gradient">We Are Grow Up.</h2>
+                    <p style="margin-bottom: 20px;">Grow Up is a full-service marketing firm, offering a wide range of
+                        below-the-line marketing solutions. We enhance to multichannel marketing O2O (Online to
+                        Offline).</p>
+                    <p style="margin-bottom: 20px;">With our clients, we focus on how we can provide them with solutions
+                        and business opportunities, rather than just 'pushing' single services. Our team consists of
+                        diverse backgrounds in business, marketing, advertising, and multimedia design. It's the passion
+                        that brings us together and enables us to delivery leading projects.</p>
+
+                    <h4 class="highlight" style="margin-top: 30px;">Our Mission</h4>
+                    <p style="margin-bottom: 30px;">To be our clients' consistent strategic partner in total
+                        below-the-line communications and O2O
+                        marketing. We connect brands with customers directly through seamless integration of brand and
+                        trade marketing services.</p>
+
+                    <!-- Animated Statistics -->
+                    <div class="stats-grid reveal-stagger">
+                        <div class="stat-item">
+                            <h3 class="stat-number text-gradient" data-target="150">0</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number text-gradient" data-target="50">0</h3>
+                            <p>Brand Partners</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number text-gradient" data-target="10">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal">
+                    <div class="img-placeholder"
+                        style="font-size: 2rem; font-weight: 800; color: #555; background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Bento Grid) -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Our Services</h2>
+            <div class="services-grid reveal-stagger">
+                <div class="service-card">
+                    <div class="custom-icon-wrapper marketing-wrap">
+                        <i class="fas fa-bullhorn main-icon"></i>
+                        <div class="sound-wave wave-1"></div>
+                        <div class="sound-wave wave-2"></div>
+                    </div>
+                    <div>
+                        <h3>Marketing Services</h3>
+                        <p>Marketing Strategy, IMC Campaign, PR & Media Plan, Brand Visibility, Mystery Shopper.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="events-icon-wrapper">
+                        <i class="fas fa-wine-glass-alt glass-left"></i>
+                        <i class="fas fa-wine-glass-alt glass-right"></i>
+                        <div class="water-splash"></div>
+                        <div class="water-splash splash-2"></div>
+                        <div class="water-splash splash-3"></div>
+                    </div>
+                    <div>
+                        <h3>Events</h3>
+                        <p>Staff Party, Dealer Party, Product Launch, Press Conference, Seminars, Virtual & Hybrid
+                            Events.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="custom-icon-wrapper roadshow-wrap">
+                        <i class="fa-solid fa-calendar-days main-icon"></i>
+                        <div class="calendar-check"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div>
+                        <h3>Roadshow</h3>
+                        <p>Booth Activation, Sales Activation, Sampling.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="custom-icon-wrapper production-wrap">
+                        <i class="fa-solid fa-icons main-icon"></i>
+                        <i class="fa-solid fa-star sparkle-icon"></i>
+                    </div>
+                    <div>
+                        <h3>Production</h3>
+                        <p>Production & Operation Team, Exhibitions.</p>
+                    </div>
+                </div>
+                <!-- <div class="service-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <div>
+                        <h3>O2O Solutions</h3>
+                        <p>Seamless Online to Offline integration. Connecting social media (FB, IG, TikTok) with
+                            on-ground activation.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section (Logo Grid Slider) -->
+    <section id="why-choose-us" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Our Clients</h2>
+            <div class="logo-slider-container reveal">
+                <div class="logo-track">
+                    <!-- Page 1 (8x5 Grid) -->
+                    <div class="logo-page active">
+                        <div class="logo-grid">
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/2-1-e1758692693866.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/6-e1758700350350.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/7-e1758701023347.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/8-e1758700052419.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/9-e1758825118576.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/10-e1758692778948.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/11-e1758825932617.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/12-e1758701117375.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/13-e1758825910125.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/14-e1758699963205.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/15-e1758693627358.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/16-e1758700415739.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/17-e1758825144405.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/18-e1758826025333.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/19-e1758700169596.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/20-e1758826686221.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/21-e1758825678942.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/22-e1758826072683.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/23-e1758826822754.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/24-e1758699342889.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/25-e1758825636846.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/26-e1758826786439.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/27-e1758825240525.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/28-e1758825191238.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/29-e1758827420682.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/30-e1758826803268.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/31-e1758826706600.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/32-e1758827436663.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/33-e1758825209230.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/34-e1758826112694.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/35-e1758692575894.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/36-e1758700929537.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/37-e1758825225459.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/38-e1758825170619.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/39-e1758700480405.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/40-e1758826652552.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/41-e1758604433932.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/42-e1758826734157.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/43-e1758604297823.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/44-e1758604222344.png"
+                                    alt="Partner 2"></div>
+                        </div>
+                    </div>
+                    <!-- Page 2 -->
+                    <div class="logo-page">
+                        <div class="logo-grid">
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/45-e1758825962690.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/46-e1758827376388.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/47-1-e1758826446729.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/48-1-e1758699478940.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/49-e1758700647770.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/50-e1758825261886.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/51-e1758826055813.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/52-e1758825944909.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/53-e1758825978798.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/54-e1758827124519.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/55-e1758825994997.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/56-e1758827405605.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/57-e1758827453294.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/58-e1758699811916.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/59-e1758700723352.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/60-e1758700842507.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/61-e1758701465803.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/62-e1758827391114.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/63-e1758827497794.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/64-e1758826768796.png"
+                                    alt="Partner 2"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/65-e1758826845805.png"
+                                    alt="Partner 1"></div>
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/66-e1758698861406.png"
+                                    alt="Partner 2"></div>
+
+                            <div class="logo-item"><img
+                                    src="https://v1.growupworld.com/wp-content/uploads/2026/01/67-e1758692170968.png"
+                                    alt="Partner 1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Selected Work</h2>
+            <div class="portfolio-grid reveal-stagger">
+                <div class="portfolio-item cursor-pointer" data-portfolio-id="1">
+                    <div class="img-placeholder"
+                        style="background: #333 url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Cyber Punk Brand</h4>
+                        <p>Rebranding & UI Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-portfolio-id="2">
+                    <div class="img-placeholder"
+                        style="background: #333 url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Neon Nights</h4>
+                        <p>Event Marketing Campaign</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-portfolio-id="3">
+                    <div class="img-placeholder"
+                        style="background: #333 url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Tech Future</h4>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal Wrapper -->
+    <div id="portfolio-modal" class="portfolio-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-image" id="modal-img"></div>
+                <div class="modal-text">
+                    <h2 id="modal-title" class="text-gradient">Project Title</h2>
+                    <h4 id="modal-subtitle" class="highlight">Subtitle</h4>
+                    <div class="modal-description">
+                        <h3>The Challenge</h3>
+                        <p id="modal-challenge">Description goes here.</p>
+                        <h3>The Solution</h3>
+                        <p id="modal-solution">Description goes here.</p>
+                        <h3>The Results</h3>
+                        <p id="modal-results">Description goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <h2 class="text-gradient">Let's Create<br>Something Epic.</h2>
+                    <p style="margin: 20px 0 40px; color: #888;">Ready to take your brand to the next level? Drop us a
+                        line.</p>
+                    <div class="info-item" style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <p>9 Soi Nakniwat 48 Junction 12, Nakniwat Road, Lat Phrao, Lat Phrao, Bangkok 10230 Tel
+                            089-1724439</p>
+                    </div>
+                    <div class="info-item" style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+                        <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <p>pakkenee.growup@gmail.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="4" placeholder="Tell us about your project" required></textarea>
+                    <button type="submit" class="btn btn-primary magnetic-btn" style="width: 100%;">Send It</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center;">
+            <div class="social-links" style="margin-bottom: 30px;">
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="color: #666;">&copy; 2024 GROW UP. Crafted with <i class="fas fa-bolt"
+                    style="color: var(--primary-color);"></i> by Antigravity.</p>
+        </div>
+    </footer>
+
+    <!-- SVG Filters for Magical Effects -->
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+        <filter id="magic-dust">
+            <!-- Fine fractal noise for pigments -->
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" seed="5" result="noise" />
+            <feColorMatrix in="noise" type="saturate" values="0" result="destat" />
+            <feComponentTransfer in="destat" result="high-contrast">
+                <feFuncR type="threshold" threshold="0.7" />
+                <feFuncG type="threshold" threshold="0.7" />
+                <feFuncB type="threshold" threshold="0.7" />
+            </feComponentTransfer>
+            <!-- Create 'sparkles' by compositing -->
+            <feComposite operator="in" in="high-contrast" in2="SourceGraphic" result="sparkles" />
+            <!-- Blur slightly to make it look like light dust -->
+            <feGaussianBlur in="sparkles" stdDeviation="0.5" result="blurred-sparkles" />
+            <feMerge>
+                <feMergeNode in="SourceGraphic" />
+                <feMergeNode in="blurred-sparkles" />
+            </feMerge>
+        </filter>
+
+        <filter id="grainy-wipe">
+            <feTurbulence type="turbulence" baseFrequency="0.5" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" />
+        </filter>
+    </svg>
+
+    <!-- Page Transition Overlay -->
+    <div id="page-transition" class="page-transition">
+        <div class="ripple-layer layer-1"></div>
+        <div class="ripple-layer layer-2"></div>
+        <div class="ripple-layer layer-3">
+            <div class="transition-text">Loading...</div>
+        </div>
+    </div>
+
+    <script>
+        // Custom Cursor & Magnetic Buttons
+        const cursor = document.getElementById('custom-cursor');
+        const hoverables = document.querySelectorAll('a, button, .magnetic-btn');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        hoverables.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+        });
+
+        const magneticBtns = document.querySelectorAll('.magnetic-btn');
+        magneticBtns.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0px, 0px)';
+            });
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        function toggleMenu() {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.toggle('fa-times');
+            icon.classList.toggle('fa-bars');
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking a link
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Add scroll header effect & progress bar
+        const progressBar = document.getElementById('scroll-progress-bar');
+        window.addEventListener('scroll', () => {
+            // Header Sticky logic
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '10px 0';
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
+                header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.background = 'rgba(10, 10, 10, 0.8)';
+                header.style.boxShadow = 'none';
+            }
+
+            // Scroll Progress logic
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+            const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Typewriter Effect
+        const typeWriterElement = document.getElementById('typewriter');
+        if (typeWriterElement) {
+            const words = ["We don't just do marketing. We create culture.", "We drive growth.", "We build brands."];
+            let i = 0;
+            let timer;
+
+            function typingEffect() {
+                let word = words[i].split("");
+                var loopTyping = function () {
+                    if (word.length > 0) {
+                        typeWriterElement.innerHTML += word.shift();
+                    } else {
+                        setTimeout(deletingEffect, 2000);
+                        return false;
+                    };
+                    timer = setTimeout(loopTyping, 50);
+                };
+                loopTyping();
+            };
+
+            function deletingEffect() {
+                let word = words[i].split("");
+                var loopDeleting = function () {
+                    if (word.length > 0) {
+                        word.pop();
+                        typeWriterElement.innerHTML = word.join("");
+                    } else {
+                        if (words.length > (i + 1)) {
+                            i++;
+                        } else {
+                            i = 0;
+                        };
+                        setTimeout(typingEffect, 500);
+                        return false;
+                    };
+                    timer = setTimeout(loopDeleting, 30);
+                };
+                loopDeleting();
+            };
+
+            // Start typing after page load
+            setTimeout(typingEffect, 1000);
+        }
+
+        // Page Transition Effect (Concentric Soul Circles)
+        const transitionLayer = document.getElementById('page-transition');
+        const transitionText = transitionLayer.querySelector('.transition-text');
+        const transitionLinks = document.querySelectorAll('.nav-links a, .hero-btns a, .logo');
+
+        transitionLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                let targetText = "GROW UP";
+
+                if (this.textContent && this.textContent.trim().length > 0) targetText = this.textContent.trim();
+                if (this.classList.contains('logo')) targetText = "GROW UP";
+
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+
+                    // Capture coordinates for the ripple center
+                    const x = e.clientX;
+                    const y = e.clientY;
+                    transitionLayer.style.setProperty('--x', `${x}px`);
+                    transitionLayer.style.setProperty('--y', `${y}px`);
+
+                    // Set Text
+                    if (transitionText) transitionText.innerText = targetText;
+
+                    // 1. Expand All Layers (White -> Green -> Black cover)
+                    transitionLayer.classList.add('active');
+
+                    // 2. Wait for full cover (approx 1200ms)
+                    setTimeout(() => {
+                        const targetSection = document.querySelector(href);
+                        if (targetSection) {
+                            const headerOffset = 80;
+                            const elementPosition = targetSection.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            window.scrollTo({ top: offsetPosition, behavior: "auto" });
+                        }
+
+                        // 3. Shrink Back (Implode)
+                        // Removing 'active' will trigger the clip-path to go back to 0%
+                        transitionLayer.classList.remove('active');
+
+                    }, 1200);
+                }
+            });
+        });
+
+        // Logo Grid Slider Logic
+        const track = document.querySelector('.logo-track');
+        const pages = document.querySelectorAll('.logo-page');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        let currentPage = 0;
+        let slideInterval;
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${currentPage * 100}%)`;
+
+            pages.forEach((page, index) => {
+                page.classList.toggle('active', index === currentPage);
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentPage);
+            });
+        }
+
+        function nextPage() {
+            currentPage = (currentPage + 1) % pages.length;
+            updateSlider();
+        }
+
+        function prevPage() {
+            currentPage = (currentPage - 1 + pages.length) % pages.length;
+            updateSlider();
+        }
+
+        function startAutoSlide() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextPage, 10000); // 10 seconds
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextPage();
+            startAutoSlide();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevPage();
+            startAutoSlide();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentPage = index;
+                updateSlider();
+                startAutoSlide();
+            });
+        });
+
+        const sliderContainer = document.querySelector('.logo-slider-container');
+        sliderContainer.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        sliderContainer.addEventListener('mouseleave', () => startAutoSlide());
+
+        // Start initial auto-slide
+        startAutoSlide();
+
+        // Scroll Reveal Observer
+        const revealElements = document.querySelectorAll('.reveal, .reveal-stagger');
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15, // Trigger when 15% visible
+            rootMargin: "0px"
+        });
+
+        // Portfolio Modal Logic
+        const portfolioData = {
+            "1": {
+                title: "Cyber Punk Brand",
+                subtitle: "Rebranding & UI Design",
+                image: "url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')",
+                challenge: "The client needed a complete visual overhaul to appeal to a younger, tech-native demographic while launching their new digital product line.",
+                solution: "We engineered a 'Cyber Punk' aesthetic encompassing neon palettes, dark modes, and kinetic typography. This was rolled out across their web platform and O2O event activations.",
+                results: "Achieved a 300% increase in brand engagement within the target demographic, and event attendance out-performed targets by 150%."
+            },
+            "2": {
+                title: "Neon Nights",
+                subtitle: "Event Marketing Campaign",
+                image: "url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')",
+                challenge: "Launching an energy drink variant in a highly saturated market required an event that could organically generate massive social media coverage.",
+                solution: "We designed 'Neon Nights', an exclusive, immersive launch party featuring interactive light installations, influencer partnerships, and a secret central location.",
+                results: "Generated 2.5 million impressions across Instagram and TikTok within 48 hours, fully selling out the first product run."
+            },
+            "3": {
+                title: "Tech Future",
+                subtitle: "Web Development",
+                image: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')",
+                challenge: "A leading tech consultancy had an outdated website that failed to reflect their cutting-edge capabilities and hampered B2B lead generation.",
+                solution: "Developed a modern, high-performance headless CMS architecture with fluid WebGL animations and an optimized lead capture funnel.",
+                results: "Bounce rates dropped by 45%, and inbound qualified leads increased by 80% quarter-over-quarter."
+            }
+        };
+
+        const modal = document.getElementById('portfolio-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalSubtitle = document.getElementById('modal-subtitle');
+        const modalChallenge = document.getElementById('modal-challenge');
+        const modalSolution = document.getElementById('modal-solution');
+        const modalResults = document.getElementById('modal-results');
+        const closeBtn = document.querySelector('.modal-close');
+        const modalOverlay = document.querySelector('.modal-overlay');
+
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const id = item.getAttribute('data-portfolio-id');
+                const data = portfolioData[id];
+
+                if (data) {
+                    modalImg.style.backgroundImage = data.image;
+                    modalTitle.innerText = data.title;
+                    modalSubtitle.innerText = data.subtitle;
+                    modalChallenge.innerText = data.challenge;
+                    modalSolution.innerText = data.solution;
+                    modalResults.innerText = data.results;
+
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+
+</html>
