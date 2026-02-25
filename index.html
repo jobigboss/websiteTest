@@ -16,6 +16,12 @@
 </head>
 
 <body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
 
     <!-- Header -->
     <header>
@@ -46,10 +52,14 @@
         <div class="growth-circle"></div>
         <div class="hero-content container">
             <h1>Grow Up <br><span class="text-gradient">Go Together</span></h1>
-            <p>We don't just do marketing. We create culture. Elevate your presence with next-gen strategies.</p>
+            <p>
+                <span id="typewriter"></span>
+                <span class="cursor"
+                    style="display:inline-block; width:2px; height:1em; background-color:var(--primary-color); animation:blink 1s step-end infinite;"></span>
+            </p>
             <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Start Project</a>
-                <a href="#portfolio" class="btn btn-secondary">View Work</a>
+                <a href="#contact" class="btn btn-primary magnetic-btn">Start Project</a>
+                <a href="#portfolio" class="btn btn-secondary magnetic-btn">View Work</a>
             </div>
         </div>
     </section>
@@ -79,9 +89,26 @@
                         that brings us together and enables us to delivery leading projects.</p>
 
                     <h4 class="highlight" style="margin-top: 30px;">Our Mission</h4>
-                    <p>To be our clients' consistent strategic partner in total below-the-line communications and O2O
+                    <p style="margin-bottom: 30px;">To be our clients' consistent strategic partner in total
+                        below-the-line communications and O2O
                         marketing. We connect brands with customers directly through seamless integration of brand and
                         trade marketing services.</p>
+
+                    <!-- Animated Statistics -->
+                    <div class="stats-grid reveal-stagger">
+                        <div class="stat-item">
+                            <h3 class="stat-number text-gradient" data-target="150">0</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number text-gradient" data-target="50">0</h3>
+                            <p>Brand Partners</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number text-gradient" data-target="10">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image reveal">
                     <div class="img-placeholder"
@@ -98,14 +125,24 @@
             <h2 class="section-title reveal">Our Services</h2>
             <div class="services-grid reveal-stagger">
                 <div class="service-card">
-                    <i class="fas fa-bullhorn"></i>
+                    <div class="custom-icon-wrapper marketing-wrap">
+                        <i class="fas fa-bullhorn main-icon"></i>
+                        <div class="sound-wave wave-1"></div>
+                        <div class="sound-wave wave-2"></div>
+                    </div>
                     <div>
                         <h3>Marketing Services</h3>
                         <p>Marketing Strategy, IMC Campaign, PR & Media Plan, Brand Visibility, Mystery Shopper.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-glass-cheers"></i>
+                    <div class="events-icon-wrapper">
+                        <i class="fas fa-wine-glass-alt glass-left"></i>
+                        <i class="fas fa-wine-glass-alt glass-right"></i>
+                        <div class="water-splash"></div>
+                        <div class="water-splash splash-2"></div>
+                        <div class="water-splash splash-3"></div>
+                    </div>
                     <div>
                         <h3>Events</h3>
                         <p>Staff Party, Dealer Party, Product Launch, Press Conference, Seminars, Virtual & Hybrid
@@ -113,16 +150,20 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <!-- <i class="fas fa-truck"></i> -->
+                    <div class="custom-icon-wrapper roadshow-wrap">
+                        <i class="fa-solid fa-calendar-days main-icon"></i>
+                        <div class="calendar-check"><i class="fas fa-check"></i></div>
+                    </div>
                     <div>
                         <h3>Roadshow</h3>
                         <p>Booth Activation, Sales Activation, Sampling.</p>
                     </div>
                 </div>
                 <div class="service-card">
-                    <!-- <i class="fas fa-cogs"></i> -->
-                    <i class="fa-solid fa-icons"></i>
+                    <div class="custom-icon-wrapper production-wrap">
+                        <i class="fa-solid fa-icons main-icon"></i>
+                        <i class="fa-solid fa-star sparkle-icon"></i>
+                    </div>
                     <div>
                         <h3>Production</h3>
                         <p>Production & Operation Team, Exhibitions.</p>
@@ -366,7 +407,7 @@
         <div class="container">
             <h2 class="section-title reveal">Selected Work</h2>
             <div class="portfolio-grid reveal-stagger">
-                <div class="portfolio-item">
+                <div class="portfolio-item cursor-pointer" data-portfolio-id="1">
                     <div class="img-placeholder"
                         style="background: #333 url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
                     </div>
@@ -375,7 +416,7 @@
                         <p>Rebranding & UI Design</p>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item cursor-pointer" data-portfolio-id="2">
                     <div class="img-placeholder"
                         style="background: #333 url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
                     </div>
@@ -384,7 +425,7 @@
                         <p>Event Marketing Campaign</p>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item cursor-pointer" data-portfolio-id="3">
                     <div class="img-placeholder"
                         style="background: #333 url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;">
                     </div>
@@ -396,6 +437,29 @@
             </div>
         </div>
     </section>
+
+    <!-- Portfolio Modal Wrapper -->
+    <div id="portfolio-modal" class="portfolio-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-image" id="modal-img"></div>
+                <div class="modal-text">
+                    <h2 id="modal-title" class="text-gradient">Project Title</h2>
+                    <h4 id="modal-subtitle" class="highlight">Subtitle</h4>
+                    <div class="modal-description">
+                        <h3>The Challenge</h3>
+                        <p id="modal-challenge">Description goes here.</p>
+                        <h3>The Solution</h3>
+                        <p id="modal-solution">Description goes here.</p>
+                        <h3>The Results</h3>
+                        <p id="modal-results">Description goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="section-padding">
@@ -419,7 +483,7 @@
                     <input type="text" placeholder="Name" required>
                     <input type="email" placeholder="Email" required>
                     <textarea rows="4" placeholder="Tell us about your project" required></textarea>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send It</button>
+                    <button type="submit" class="btn btn-primary magnetic-btn" style="width: 100%;">Send It</button>
                 </form>
             </div>
         </div>
@@ -476,26 +540,122 @@
     </div>
 
     <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+        // Custom Cursor & Magnetic Buttons
+        const cursor = document.getElementById('custom-cursor');
+        const hoverables = document.querySelectorAll('a, button, .magnetic-btn');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.querySelector('i').classList.toggle('fa-times');
-            hamburger.querySelector('i').classList.toggle('fa-bars');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
         });
 
-        // Add scroll header effect
+        hoverables.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+        });
+
+        const magneticBtns = document.querySelectorAll('.magnetic-btn');
+        magneticBtns.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0px, 0px)';
+            });
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        function toggleMenu() {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.toggle('fa-times');
+            icon.classList.toggle('fa-bars');
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking a link
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Add scroll header effect & progress bar
+        const progressBar = document.getElementById('scroll-progress-bar');
         window.addEventListener('scroll', () => {
+            // Header Sticky logic
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.style.padding = '10px 0';
                 header.style.background = 'rgba(10, 10, 10, 0.95)';
+                header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
             } else {
                 header.style.padding = '20px 0';
                 header.style.background = 'rgba(10, 10, 10, 0.8)';
+                header.style.boxShadow = 'none';
             }
+
+            // Scroll Progress logic
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+            const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+            progressBar.style.width = scrolled + '%';
         });
+
+        // Typewriter Effect
+        const typeWriterElement = document.getElementById('typewriter');
+        if (typeWriterElement) {
+            const words = ["We don't just do marketing. We create culture.", "We drive growth.", "We build brands."];
+            let i = 0;
+            let timer;
+
+            function typingEffect() {
+                let word = words[i].split("");
+                var loopTyping = function () {
+                    if (word.length > 0) {
+                        typeWriterElement.innerHTML += word.shift();
+                    } else {
+                        setTimeout(deletingEffect, 2000);
+                        return false;
+                    };
+                    timer = setTimeout(loopTyping, 50);
+                };
+                loopTyping();
+            };
+
+            function deletingEffect() {
+                let word = words[i].split("");
+                var loopDeleting = function () {
+                    if (word.length > 0) {
+                        word.pop();
+                        typeWriterElement.innerHTML = word.join("");
+                    } else {
+                        if (words.length > (i + 1)) {
+                            i++;
+                        } else {
+                            i = 0;
+                        };
+                        setTimeout(typingEffect, 500);
+                        return false;
+                    };
+                    timer = setTimeout(loopDeleting, 30);
+                };
+                loopDeleting();
+            };
+
+            // Start typing after page load
+            setTimeout(typingEffect, 1000);
+        }
 
         // Page Transition Effect (Concentric Soul Circles)
         const transitionLayer = document.getElementById('page-transition');
@@ -619,6 +779,71 @@
             threshold: 0.15, // Trigger when 15% visible
             rootMargin: "0px"
         });
+
+        // Portfolio Modal Logic
+        const portfolioData = {
+            "1": {
+                title: "Cyber Punk Brand",
+                subtitle: "Rebranding & UI Design",
+                image: "url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')",
+                challenge: "The client needed a complete visual overhaul to appeal to a younger, tech-native demographic while launching their new digital product line.",
+                solution: "We engineered a 'Cyber Punk' aesthetic encompassing neon palettes, dark modes, and kinetic typography. This was rolled out across their web platform and O2O event activations.",
+                results: "Achieved a 300% increase in brand engagement within the target demographic, and event attendance out-performed targets by 150%."
+            },
+            "2": {
+                title: "Neon Nights",
+                subtitle: "Event Marketing Campaign",
+                image: "url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')",
+                challenge: "Launching an energy drink variant in a highly saturated market required an event that could organically generate massive social media coverage.",
+                solution: "We designed 'Neon Nights', an exclusive, immersive launch party featuring interactive light installations, influencer partnerships, and a secret central location.",
+                results: "Generated 2.5 million impressions across Instagram and TikTok within 48 hours, fully selling out the first product run."
+            },
+            "3": {
+                title: "Tech Future",
+                subtitle: "Web Development",
+                image: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')",
+                challenge: "A leading tech consultancy had an outdated website that failed to reflect their cutting-edge capabilities and hampered B2B lead generation.",
+                solution: "Developed a modern, high-performance headless CMS architecture with fluid WebGL animations and an optimized lead capture funnel.",
+                results: "Bounce rates dropped by 45%, and inbound qualified leads increased by 80% quarter-over-quarter."
+            }
+        };
+
+        const modal = document.getElementById('portfolio-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalSubtitle = document.getElementById('modal-subtitle');
+        const modalChallenge = document.getElementById('modal-challenge');
+        const modalSolution = document.getElementById('modal-solution');
+        const modalResults = document.getElementById('modal-results');
+        const closeBtn = document.querySelector('.modal-close');
+        const modalOverlay = document.querySelector('.modal-overlay');
+
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const id = item.getAttribute('data-portfolio-id');
+                const data = portfolioData[id];
+
+                if (data) {
+                    modalImg.style.backgroundImage = data.image;
+                    modalTitle.innerText = data.title;
+                    modalSubtitle.innerText = data.subtitle;
+                    modalChallenge.innerText = data.challenge;
+                    modalSolution.innerText = data.solution;
+                    modalResults.innerText = data.results;
+
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
 
         revealElements.forEach(el => revealObserver.observe(el));
     </script>
